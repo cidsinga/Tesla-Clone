@@ -7,9 +7,10 @@ import { Switch, Route, Router } from 'react-router-dom';
 function App() {
   return (
     <div>
-    <Header/>
-
-
+<Switch>
+<Route exact path='/' component={Header}/>
+<Route path='/cars' component={Cars}/>
+</Switch>
     </div>
   );
 }
